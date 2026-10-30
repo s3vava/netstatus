@@ -1,0 +1,132 @@
+{
+  "home_country_code": "RU",
+  "proxy_url": "",
+  "check_method": "tls",
+  "check_timeout": 2.0,
+  "recheck_min": 5.0,
+  "recheck_max": 7.0,
+  "west_fail_streak": 3,
+  "west_slow_factor": 3,
+  "burst_size": 5,
+  "burst_timeout": 2.0,
+  "burst_fast_interval": 0.3,
+  "ru_interval_min": 5.0,
+  "ru_interval_max": 7.0,
+  "confirm_bursts": 2,
+  "whitelist_threshold": 0.6,
+  "ru_other_max_ok": 1,
+  "local_poll_interval": 1.0,
+  "ip_refresh_interval": 60,
+  "request_timeout": 6,
+  "count_system_proxy_as_vpn": true,
+  "route_probe_ip": "1.1.1.1",
+  "fake_ip_ranges": [
+    "198.18.0.0/15"
+  ],
+  "tunnel_min_prefix": 30,
+  "vpn_adapter_keywords": [
+    "tun",
+    "tap",
+    "wintun",
+    "wireguard",
+    "wg",
+    "openvpn",
+    "vpn",
+    "ppp",
+    "happ",
+    "sing-box",
+    "singbox",
+    "sing-tun",
+    "xray",
+    "v2ray",
+    "clash",
+    "mihomo",
+    "nekoray",
+    "hiddify",
+    "amnezia",
+    "outline",
+    "warp",
+    "nord",
+    "proton",
+    "mullvad"
+  ],
+  "vpn_adapter_ignore": [
+    "teredo",
+    "isatap",
+    "6to4",
+    "ip-https",
+    "tunneling"
+  ],
+  "virtual_adapter_keywords": [
+    "vethernet",
+    "virtualbox",
+    "vmware",
+    "loopback",
+    "bluetooth",
+    "hyper-v",
+    "wsl",
+    "docker",
+    "npcap",
+    "pseudo",
+    "*"
+  ],
+  "use_ping": true,
+  "tcp_targets": [
+    [
+      "77.88.8.8",
+      53
+    ],
+    [
+      "77.88.8.1",
+      53
+    ],
+    [
+      "77.88.8.88",
+      53
+    ],
+    [
+      "77.88.8.8",
+      443
+    ]
+  ],
+  "ping_targets": [
+    "77.88.8.8",
+    "77.88.8.1"
+  ],
+  "groups": {
+    "WEST": [
+      "www.google.com",
+      "www.cloudflare.com",
+      "github.com",
+      "www.microsoft.com",
+      "www.apple.com",
+      "www.wikipedia.org",
+      "www.amazon.com",
+      "www.python.org",
+      "www.mozilla.org",
+      "www.debian.org"
+    ],
+    "WL": [
+      "ya.ru",
+      "vk.com",
+      "mail.ru",
+      "www.gosuslugi.ru",
+      "www.ozon.ru",
+      "www.wildberries.ru",
+      "rutube.ru",
+      "2gis.ru",
+      "www.avito.ru",
+      "dzen.ru"
+    ],
+    "RU_OTHER": [
+      "habr.com",
+      "pikabu.ru",
+      "www.drive2.ru",
+      "www.sports.ru",
+      "www.championat.com",
+      "dtf.ru",
+      "www.drom.ru",
+      "www.fl.ru"
+    ]
+  }
+}
